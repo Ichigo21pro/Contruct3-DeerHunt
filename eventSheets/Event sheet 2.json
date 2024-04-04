@@ -1,5 +1,62 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 528005454447631
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "scope",
+					"sid": 171083925506625,
+					"parameters": {
+						"x": "Touch.X",
+						"y": "Touch.y"
+					}
+				}
+			],
+			"sid": 989972594171356
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-touch",
+					"objectClass": "Touch",
+					"sid": 530486807682247
+				}
+			],
+			"actions": [],
+			"sid": 635953278336670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 123402922002413
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "scope",
+					"sid": 268279899107294,
+					"parameters": {
+						"x": "509",
+						"y": "353"
+					}
+				}
+			],
+			"sid": 593225728699929
+		}
+	],
 	"sid": 247786262815208
 }

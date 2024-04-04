@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Browser",
-			"name": "Browser",
+			"name": "Navegador",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -23,21 +23,21 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Touch",
-			"name": "Touch",
+			"name": "Control táctil",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -51,7 +51,11 @@
 			"JuegaBoton",
 			"Text",
 			"Browser",
-			"scope"
+			"scope",
+			"deer",
+			"dog",
+			"loadingSplashPage_med",
+			"ui_button_Reload"
 		],
 		"subfolders": []
 	},
