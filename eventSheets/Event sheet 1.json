@@ -1,0 +1,55 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 160456646325998,
+					"parameters": {
+						"object": "JuegaBoton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 251930071341086,
+					"parameters": {
+						"url": "\"https://play.google.com/store/apps/details?id=com.fullfat.deerhunter&hl=es_MX\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 419135496555441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 611483326502262,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 634931978373292,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 533830589692731
+		}
+	],
+	"sid": 812400956905769
+}
