@@ -487,14 +487,6 @@
 						"variable": "balas",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-spraying",
-					"objectClass": "Partículas",
-					"sid": 546315677693221,
-					"parameters": {
-						"state": "spraying"
-					}
 				}
 			],
 			"sid": 488961212335529
@@ -522,6 +514,17 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "ciervo",
+					"sid": 133510482921912,
+					"parameters": {
+						"object": "Partículas",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
 				{
 					"id": "destroy",
 					"objectClass": "ciervo",
