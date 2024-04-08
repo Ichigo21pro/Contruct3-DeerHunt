@@ -9,21 +9,28 @@
 		{
 			"type": "plugin",
 			"id": "Arr",
-			"name": "Matriz",
+			"name": "Array",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Browser",
-			"name": "Navegador",
+			"name": "Browser",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Date",
-			"name": "Fecha",
+			"name": "Date",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -37,42 +44,42 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Fondo en mosaico",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Touch",
-			"name": "Control táctil",
+			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Bala",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Fade",
-			"name": "Desvanecer",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Seno",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -105,7 +112,7 @@
 			"borde3",
 			"borde4",
 			"Sprite4",
-			"HITBOX",
+			"HitboxCIervo",
 			"bullet_small",
 			"bullet_small2",
 			"bullet_small3",
@@ -115,11 +122,13 @@
 			"bullet_small7",
 			"bullet_small8",
 			"bullet_small9",
-			"Matriz",
+			"ArrayBalas",
 			"balas",
 			"DiseñoSinTítulo",
 			"Fecha",
-			"countdown"
+			"countdown",
+			"PlatoVisual",
+			"Partículas"
 		],
 		"subfolders": []
 	},

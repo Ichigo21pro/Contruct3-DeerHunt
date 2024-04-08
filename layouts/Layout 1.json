@@ -182,9 +182,9 @@
 	"sid": 994826609472422,
 	"nonworld-instances": [
 		{
-			"type": "Matriz",
+			"type": "ArrayBalas",
 			"properties": {
-				"width": 10,
+				"width": 9,
 				"height": 1,
 				"depth": 1
 			},
