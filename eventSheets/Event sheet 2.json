@@ -2,6 +2,16 @@
 	"name": "Event sheet 2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Apuntando",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 201870422076149
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -71,16 +81,62 @@
 			],
 			"actions": [
 				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 576589096351715,
+					"parameters": {
+						"variable": "Apuntando"
+					}
+				}
+			],
+			"sid": 571076835167991
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 712563656813362,
+					"parameters": {
+						"variable": "Apuntando"
+					}
+				}
+			],
+			"actions": [
+				{
 					"id": "set-size",
 					"objectClass": "scope",
-					"sid": 408925139659324,
+					"sid": 867389809277634,
 					"parameters": {
 						"width": "250",
 						"height": "250"
 					}
 				}
 			],
-			"sid": 571076835167991
+			"sid": 427344990433237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 361991989874221
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "scope",
+					"sid": 726169365501610,
+					"parameters": {
+						"width": "150",
+						"height": "150"
+					}
+				}
+			],
+			"sid": 790975269227979
 		}
 	],
 	"sid": 247786262815208
