@@ -372,6 +372,24 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 137891565805790,
+					"parameters": {
+						"variable": "PlatoCreado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 291274477652548,
+					"parameters": {
+						"variable": "ObjetivoPlato",
+						"value": "50"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 675977563445026,
@@ -381,77 +399,28 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 244883876865226,
-					"parameters": {
-						"variable": "PlatoCreado",
-						"value": "true"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 879215517790042,
-					"parameters": {
-						"object-to-create": "ciervo",
-						"layer": "0",
-						"x": "638",
-						"y": "565",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
 					"id": "set-text",
 					"objectClass": "Objetivo",
-					"sid": 282095138287782,
+					"sid": 727371219668326,
 					"parameters": {
 						"text": "ObjetivoInfo & ObjetivoCiervo"
 					}
 				},
 				{
-					"id": "set-eventvar-value",
+					"id": "create-object",
 					"objectClass": "System",
-					"sid": 546959563941950,
+					"sid": 813188964820105,
 					"parameters": {
-						"variable": "ObjetivoPlato",
-						"value": "50"
+						"object-to-create": "ciervo",
+						"layer": "0",
+						"x": "800",
+						"y": "194",
+						"create-hierarchy": true,
+						"template-name": "\"\""
 					}
 				}
 			],
 			"sid": 915142083602955
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "ciervo",
-					"sid": 160077282070762
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "ciervo",
-					"sid": 678944761503986,
-					"parameters": {
-						"width": "133 ",
-						"height": "144"
-					}
-				},
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "ciervo",
-					"sid": 913515291705146,
-					"parameters": {
-						"x": "borde1.x",
-						"y": "borde1.y"
-					}
-				}
-			],
-			"sid": 640693612083457
 		},
 		{
 			"eventType": "block",
@@ -467,20 +436,28 @@
 			],
 			"actions": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "ciervo",
-					"sid": 996214736999639,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
 					"id": "set-angle-toward-position",
 					"objectClass": "ciervo",
 					"sid": 788381963678329,
 					"parameters": {
 						"x": "borde2.x",
 						"y": "borde2.y"
+					}
+				},
+				{
+					"id": "set-flipped",
+					"objectClass": "ciervo",
+					"sid": 207390844837037,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 454488568642720,
+					"parameters": {
+						"state": "mirrored"
 					}
 				}
 			],
@@ -509,11 +486,19 @@
 					}
 				},
 				{
+					"id": "set-flipped",
+					"objectClass": "ciervo",
+					"sid": 308583072026568,
+					"parameters": {
+						"state": "flipped"
+					}
+				},
+				{
 					"id": "set-mirrored",
 					"objectClass": "ciervo",
-					"sid": 472796742396666,
+					"sid": 101927740922434,
 					"parameters": {
-						"state": "not-mirrored"
+						"state": "mirrored"
 					}
 				}
 			],
@@ -533,20 +518,28 @@
 			],
 			"actions": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "ciervo",
-					"sid": 417975504755411,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
 					"id": "set-angle-toward-position",
 					"objectClass": "ciervo",
 					"sid": 484899164862854,
 					"parameters": {
 						"x": "borde4.x",
 						"y": "borde4.y"
+					}
+				},
+				{
+					"id": "set-flipped",
+					"objectClass": "ciervo",
+					"sid": 795087750842574,
+					"parameters": {
+						"state": "not-flipped"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 346895776004154,
+					"parameters": {
+						"state": "mirrored"
 					}
 				}
 			],
@@ -566,20 +559,28 @@
 			],
 			"actions": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "ciervo",
-					"sid": 760816073885172,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				},
-				{
 					"id": "set-angle-toward-position",
 					"objectClass": "ciervo",
 					"sid": 115197232893427,
 					"parameters": {
 						"x": "borde1.x",
 						"y": "borde1.y"
+					}
+				},
+				{
+					"id": "set-flipped",
+					"objectClass": "ciervo",
+					"sid": 242267793765538,
+					"parameters": {
+						"state": "flipped"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 889076589402316,
+					"parameters": {
+						"state": "mirrored"
 					}
 				}
 			],
