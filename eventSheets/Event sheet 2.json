@@ -22,6 +22,16 @@
 			"sid": 282951138677974
 		},
 		{
+			"eventType": "variable",
+			"name": "PlatoCreado",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 624133868997508
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -43,13 +53,65 @@
 				{
 					"id": "set-text",
 					"objectClass": "Objetivo",
-					"sid": 624584183807782,
+					"sid": 513702767499414,
 					"parameters": {
-						"text": "\"Objetivos :\"& Platos"
+						"text": "\"Platos a destruir: \"& Platos"
 					}
 				}
 			],
-			"sid": 989972594171356
+			"sid": 989972594171356,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 571421164607645,
+							"parameters": {
+								"variable": "PlatoCreado"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 233278592726776
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 470737866171135
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 294105126864983,
+							"parameters": {
+								"object-to-create": "Plato",
+								"layer": "0",
+								"x": "random(-350,80)",
+								"y": "764",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 368375479810657,
+							"parameters": {
+								"variable": "PlatoCreado",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 526682551904861
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -212,6 +274,15 @@
 						"variable": "Platos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 774124404369662,
+					"parameters": {
+						"variable": "PlatoCreado",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 561793473056817
@@ -234,9 +305,57 @@
 						"x": "PuntoReferencia.x",
 						"y": "PuntoReferencia.y"
 					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Plato",
+					"sid": 704569679574690,
+					"behaviorType": "Bala",
+					"parameters": {
+						"acceleration": "random(1,2)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Plato",
+					"sid": 906578827036314,
+					"behaviorType": "Bala",
+					"parameters": {
+						"speed": "random(400,900)"
+					}
 				}
 			],
 			"sid": 643826029779577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Plato",
+					"sid": 407846847792758,
+					"parameters": {
+						"object": "PuntoReferencia"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Plato",
+					"sid": 478480492005134
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 932884114260032,
+					"parameters": {
+						"variable": "PlatoCreado",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 586882107959999
 		}
 	],
 	"sid": 247786262815208
