@@ -79,7 +79,7 @@
 			"ui_button_Reload",
 			"BotonApuntar",
 			"CajaTexto",
-			"Texto",
+			"TextoMensaje",
 			"Plato",
 			"PuntoReferencia",
 			"Sprite2",
@@ -89,7 +89,9 @@
 			"borde1",
 			"borde2",
 			"borde3",
-			"borde4"
+			"borde4",
+			"Sprite4",
+			"HITBOX"
 		],
 		"subfolders": []
 	},

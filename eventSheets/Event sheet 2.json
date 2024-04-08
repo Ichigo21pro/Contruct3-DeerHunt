@@ -97,6 +97,23 @@
 					"parameters": {
 						"text": "ObjetivoInfo & ObjetivoPlato"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoMensaje",
+					"sid": 182234530034177,
+					"parameters": {
+						"text": "\"Practica esos tiros!\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ciervo",
+					"sid": 494744687007510,
+					"parameters": {
+						"x": "HITBOX.x",
+						"y": "HITBOX.y"
+					}
 				}
 			],
 			"sid": 989972594171356,
@@ -165,6 +182,30 @@
 					],
 					"actions": [],
 					"sid": 203347177705611
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 777483607067700,
+							"parameters": {
+								"variable": "Fin"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 562005517123734,
+							"parameters": {
+								"layout": "Layout 3"
+							}
+						}
+					],
+					"sid": 593920998256237
 				}
 			]
 		},
@@ -221,11 +262,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
+					"id": "is-touching-object",
 					"objectClass": "Touch",
-					"sid": 431132227297440,
+					"sid": 458344958629361,
 					"parameters": {
-						"object": "ciervo"
+						"object": "HITBOX"
 					}
 				}
 			],
@@ -234,6 +275,11 @@
 					"id": "destroy",
 					"objectClass": "ciervo",
 					"sid": 355341685763210
+				},
+				{
+					"id": "destroy",
+					"objectClass": "HITBOX",
+					"sid": 186844053102265
 				},
 				{
 					"id": "subtract-from-eventvar",
@@ -383,15 +429,6 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 291274477652548,
-					"parameters": {
-						"variable": "ObjetivoPlato",
-						"value": "50"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
 					"sid": 675977563445026,
 					"parameters": {
 						"variable": "ObjetivoInfo",
@@ -407,20 +444,38 @@
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 813188964820105,
+					"id": "set-speed",
+					"objectClass": "HITBOX",
+					"sid": 599102752344105,
+					"behaviorType": "Bala",
 					"parameters": {
-						"object-to-create": "ciervo",
-						"layer": "0",
-						"x": "800",
-						"y": "194",
-						"create-hierarchy": true,
-						"template-name": "\"\""
+						"speed": "900"
 					}
 				}
 			],
 			"sid": 915142083602955
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 848724690674987
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "HITBOX",
+					"sid": 971296507344653,
+					"behaviorType": "Bala",
+					"parameters": {
+						"speed": "0"
+					}
+				}
+			],
+			"sid": 223879085721405
 		},
 		{
 			"eventType": "block",
@@ -437,8 +492,8 @@
 			"actions": [
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "ciervo",
-					"sid": 788381963678329,
+					"objectClass": "HITBOX",
+					"sid": 835881222539958,
 					"parameters": {
 						"x": "borde2.x",
 						"y": "borde2.y"
@@ -446,16 +501,24 @@
 				},
 				{
 					"id": "set-flipped",
-					"objectClass": "ciervo",
-					"sid": 207390844837037,
+					"objectClass": "HITBOX",
+					"sid": 391479974748366,
 					"parameters": {
 						"state": "not-flipped"
 					}
 				},
 				{
 					"id": "set-mirrored",
+					"objectClass": "HITBOX",
+					"sid": 813969343967646,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
 					"objectClass": "ciervo",
-					"sid": 454488568642720,
+					"sid": 569444626243598,
 					"parameters": {
 						"state": "mirrored"
 					}
@@ -478,8 +541,8 @@
 			"actions": [
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "ciervo",
-					"sid": 367413772829874,
+					"objectClass": "HITBOX",
+					"sid": 494114300083853,
 					"parameters": {
 						"x": "borde3.x",
 						"y": "borde3.y"
@@ -487,18 +550,26 @@
 				},
 				{
 					"id": "set-flipped",
-					"objectClass": "ciervo",
-					"sid": 308583072026568,
+					"objectClass": "HITBOX",
+					"sid": 492843483383977,
 					"parameters": {
 						"state": "flipped"
 					}
 				},
 				{
 					"id": "set-mirrored",
-					"objectClass": "ciervo",
-					"sid": 101927740922434,
+					"objectClass": "HITBOX",
+					"sid": 158735230472007,
 					"parameters": {
 						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 953284128162260,
+					"parameters": {
+						"state": "not-mirrored"
 					}
 				}
 			],
@@ -519,8 +590,8 @@
 			"actions": [
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "ciervo",
-					"sid": 484899164862854,
+					"objectClass": "HITBOX",
+					"sid": 654027288098847,
 					"parameters": {
 						"x": "borde4.x",
 						"y": "borde4.y"
@@ -528,16 +599,24 @@
 				},
 				{
 					"id": "set-flipped",
-					"objectClass": "ciervo",
-					"sid": 795087750842574,
+					"objectClass": "HITBOX",
+					"sid": 685648987378098,
 					"parameters": {
 						"state": "not-flipped"
 					}
 				},
 				{
 					"id": "set-mirrored",
+					"objectClass": "HITBOX",
+					"sid": 880541558325237,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
 					"objectClass": "ciervo",
-					"sid": 346895776004154,
+					"sid": 935428297080948,
 					"parameters": {
 						"state": "mirrored"
 					}
@@ -560,8 +639,8 @@
 			"actions": [
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "ciervo",
-					"sid": 115197232893427,
+					"objectClass": "HITBOX",
+					"sid": 965174142994097,
 					"parameters": {
 						"x": "borde1.x",
 						"y": "borde1.y"
@@ -569,18 +648,26 @@
 				},
 				{
 					"id": "set-flipped",
-					"objectClass": "ciervo",
-					"sid": 242267793765538,
+					"objectClass": "HITBOX",
+					"sid": 838799594927975,
 					"parameters": {
 						"state": "flipped"
 					}
 				},
 				{
 					"id": "set-mirrored",
-					"objectClass": "ciervo",
-					"sid": 889076589402316,
+					"objectClass": "HITBOX",
+					"sid": 186869411378556,
 					"parameters": {
 						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 874191040361489,
+					"parameters": {
+						"state": "not-mirrored"
 					}
 				}
 			],
@@ -592,11 +679,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 762540378239170,
+					"sid": 306915651739937,
 					"parameters": {
 						"variable": "ObjetivoPlato",
-						"comparison": 0,
-						"value": "50"
+						"comparison": 3,
+						"value": "0"
 					}
 				},
 				{
@@ -611,6 +698,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 551496901784530,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",

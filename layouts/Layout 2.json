@@ -240,7 +240,7 @@
 								"fade-in-time": 0,
 								"wait-time": 0,
 								"fade-out-time": 3,
-								"destroy": true,
+								"destroy": false,
 								"enabled": true,
 								"live-preview": false
 							}
@@ -338,9 +338,9 @@
 					}
 				},
 				{
-					"type": "Texto",
+					"type": "TextoMensaje",
 					"properties": {
-						"text": "Practica esos tiros!",
+						"text": "Mensaje",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 53,
@@ -370,7 +370,7 @@
 								"fade-in-time": 0,
 								"wait-time": 0,
 								"fade-out-time": 3,
-								"destroy": true,
+								"destroy": false,
 								"enabled": true,
 								"live-preview": false
 							}
@@ -540,6 +540,47 @@
 						"height": 144,
 						"originX": 0.5533333333333333,
 						"originY": 0.4146666666666667,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HITBOX",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bala": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -167,
+						"y": 258,
+						"width": 87,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.492,
 						"color": [
 							1,
 							1,
