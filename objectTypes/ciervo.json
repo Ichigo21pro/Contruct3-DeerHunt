@@ -4,7 +4,13 @@
 	"sid": 523242745122368,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 216602563137503
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -566,7 +572,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 62
 			}
 		],
 		"subfolders": []

@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "ObjetivoCantidad",
+			"name": "ObjetivoPlato",
 			"type": "number",
 			"initialValue": "5",
 			"comment": "",
@@ -42,6 +42,36 @@
 			"sid": 472207405537838
 		},
 		{
+			"eventType": "variable",
+			"name": "ObjetivoCiervo",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 471012747612975
+		},
+		{
+			"eventType": "variable",
+			"name": "CiervoActivo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 428552537325267
+		},
+		{
+			"eventType": "variable",
+			"name": "Fin",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 987591012896808
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -65,7 +95,7 @@
 					"objectClass": "Objetivo",
 					"sid": 592855267013921,
 					"parameters": {
-						"text": "ObjetivoInfo & ObjetivoCantidad"
+						"text": "ObjetivoInfo & ObjetivoPlato"
 					}
 				}
 			],
@@ -120,6 +150,21 @@
 						}
 					],
 					"sid": 526682551904861
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 264506427831306,
+							"parameters": {
+								"variable": "CiervoActivo"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 203347177705611
 				}
 			]
 		},
@@ -163,77 +208,6 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 741076550115905,
-					"parameters": {
-						"object": "BotonApuntar"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "toggle-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 576589096351715,
-					"parameters": {
-						"variable": "Apuntando"
-					}
-				}
-			],
-			"sid": 571076835167991
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 712563656813362,
-					"parameters": {
-						"variable": "Apuntando"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "scope",
-					"sid": 867389809277634,
-					"parameters": {
-						"width": "250",
-						"height": "250"
-					}
-				}
-			],
-			"sid": 427344990433237
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 361991989874221
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "scope",
-					"sid": 726169365501610,
-					"parameters": {
-						"width": "150",
-						"height": "150"
-					}
-				}
-			],
-			"sid": 790975269227979
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
 					"sid": 623243453583633,
 					"parameters": {
 						"object": "TiledBackground"
@@ -255,7 +229,22 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ciervo",
+					"sid": 355341685763210
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 389249829723912,
+					"parameters": {
+						"variable": "ObjetivoCiervo",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 692931543360184
 		},
 		{
@@ -281,7 +270,7 @@
 					"objectClass": "System",
 					"sid": 196723167994136,
 					"parameters": {
-						"variable": "ObjetivoCantidad",
+						"variable": "ObjetivoPlato",
 						"value": "1"
 					}
 				},
@@ -375,22 +364,13 @@
 					"objectClass": "System",
 					"sid": 291943864720012,
 					"parameters": {
-						"variable": "ObjetivoCantidad",
+						"variable": "ObjetivoPlato",
 						"comparison": 3,
 						"value": "0"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 591324109321715,
-					"parameters": {
-						"variable": "PlatoCreado",
-						"value": "true"
-					}
-				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
@@ -401,16 +381,246 @@
 					}
 				},
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 244883876865226,
+					"parameters": {
+						"variable": "PlatoCreado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 879215517790042,
+					"parameters": {
+						"object-to-create": "ciervo",
+						"layer": "0",
+						"x": "638",
+						"y": "565",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Objetivo",
+					"sid": 282095138287782,
+					"parameters": {
+						"text": "ObjetivoInfo & ObjetivoCiervo"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 770289625467024,
+					"sid": 546959563941950,
 					"parameters": {
-						"variable": "ObjetivoCantidad",
-						"value": "1"
+						"variable": "ObjetivoPlato",
+						"value": "50"
 					}
 				}
 			],
 			"sid": 915142083602955
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "ciervo",
+					"sid": 160077282070762
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "ciervo",
+					"sid": 678944761503986,
+					"parameters": {
+						"width": "133 ",
+						"height": "144"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "ciervo",
+					"sid": 913515291705146,
+					"parameters": {
+						"x": "borde1.x",
+						"y": "borde1.y"
+					}
+				}
+			],
+			"sid": 640693612083457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ciervo",
+					"sid": 529003941669233,
+					"parameters": {
+						"object": "borde1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 996214736999639,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "ciervo",
+					"sid": 788381963678329,
+					"parameters": {
+						"x": "borde2.x",
+						"y": "borde2.y"
+					}
+				}
+			],
+			"sid": 891826994500092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ciervo",
+					"sid": 921150539942961,
+					"parameters": {
+						"object": "borde2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "ciervo",
+					"sid": 367413772829874,
+					"parameters": {
+						"x": "borde3.x",
+						"y": "borde3.y"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 472796742396666,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 796769004803375
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ciervo",
+					"sid": 438684661459394,
+					"parameters": {
+						"object": "borde3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 417975504755411,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "ciervo",
+					"sid": 484899164862854,
+					"parameters": {
+						"x": "borde4.x",
+						"y": "borde4.y"
+					}
+				}
+			],
+			"sid": 817975659642756
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ciervo",
+					"sid": 618486699942150,
+					"parameters": {
+						"object": "borde4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "ciervo",
+					"sid": 760816073885172,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "ciervo",
+					"sid": 115197232893427,
+					"parameters": {
+						"x": "borde1.x",
+						"y": "borde1.y"
+					}
+				}
+			],
+			"sid": 533014864396012
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 762540378239170,
+					"parameters": {
+						"variable": "ObjetivoPlato",
+						"comparison": 0,
+						"value": "50"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 279291371913465,
+					"parameters": {
+						"variable": "ObjetivoCiervo",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 924851520894502,
+					"parameters": {
+						"variable": "Fin",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 876050939197814
 		}
 	],
 	"sid": 247786262815208

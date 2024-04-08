@@ -85,7 +85,11 @@
 			"Sprite2",
 			"ciervo",
 			"Objetivo",
-			"Sprite3"
+			"Sprite3",
+			"borde1",
+			"borde2",
+			"borde3",
+			"borde4"
 		],
 		"subfolders": []
 	},
