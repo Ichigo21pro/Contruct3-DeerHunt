@@ -12,6 +12,16 @@
 			"sid": 201870422076149
 		},
 		{
+			"eventType": "variable",
+			"name": "Platos",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 282951138677974
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -28,6 +38,14 @@
 					"parameters": {
 						"x": "Touch.X",
 						"y": "Touch.y"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Objetivo",
+					"sid": 624584183807782,
+					"parameters": {
+						"text": "\"Objetivos :\"& Platos"
 					}
 				}
 			],
@@ -140,9 +158,85 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 623243453583633,
+					"parameters": {
+						"object": "TiledBackground"
+					}
+				}
+			],
 			"actions": [],
 			"sid": 488961212335529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 431132227297440,
+					"parameters": {
+						"object": "ciervo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 692931543360184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 252902635896710,
+					"parameters": {
+						"object": "Plato"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Plato",
+					"sid": 564524609708476
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 196723167994136,
+					"parameters": {
+						"variable": "Platos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 561793473056817
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Plato",
+					"sid": 309206571113661
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Plato",
+					"sid": 949763881829406,
+					"parameters": {
+						"x": "PuntoReferencia.x",
+						"y": "PuntoReferencia.y"
+					}
+				}
+			],
+			"sid": 643826029779577
 		}
 	],
 	"sid": 247786262815208

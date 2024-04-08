@@ -1,37 +1,47 @@
 {
-	"name": "CajaTexto",
+	"name": "Sprite3",
 	"plugin-id": "Sprite",
-	"sid": 333833751375617,
+	"sid": 108509281682065,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Fade",
-			"name": "Desvanecer",
-			"sid": 669239683994299
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 400,
-						"height": 200,
+						"width": 164,
+						"height": 54,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9055685,
+						"imageSpriteId": 4130011,
+						"collisionPoly": {
+							"points": [
+								0.07317073170731707,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.07317073170731707,
+								1,
+								0,
+								0.5370370370370371,
+								0,
+								0.46296296296296297
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 920868956222587,
-				"name": "Default",
+				"sid": 861554379477816,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

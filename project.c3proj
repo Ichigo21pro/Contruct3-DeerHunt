@@ -54,6 +54,13 @@
 			"name": "Desvanecer",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Seno",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "g4z4352s1x4",
@@ -74,7 +81,11 @@
 			"CajaTexto",
 			"Texto",
 			"Plato",
-			"PuntoReferencia"
+			"PuntoReferencia",
+			"Sprite2",
+			"ciervo",
+			"Objetivo",
+			"Sprite3"
 		],
 		"subfolders": []
 	},
