@@ -56,6 +56,31 @@
 				}
 			],
 			"sid": 593225728699929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 949798873405880,
+					"parameters": {
+						"object": "BotonApuntar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "scope",
+					"sid": 408925139659324,
+					"parameters": {
+						"width": "250",
+						"height": "250"
+					}
+				}
+			],
+			"sid": 571076835167991
 		}
 	],
 	"sid": 247786262815208
