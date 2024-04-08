@@ -122,6 +122,16 @@
 			"sid": 833458736140107
 		},
 		{
+			"eventType": "variable",
+			"name": "marcasPlatos",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 966100230260436
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -138,87 +148,6 @@
 					"parameters": {
 						"variable": "AFKcount",
 						"value": "Fecha.GetUTCSeconds(Fecha.now) + 10"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 605701658022632,
-					"parameters": {
-						"x": "0",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 966125808139633,
-					"parameters": {
-						"x": "1",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 555914311751780,
-					"parameters": {
-						"x": "2",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 248971199005514,
-					"parameters": {
-						"x": "3",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 262214950105172,
-					"parameters": {
-						"x": "4",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 606877210250391,
-					"parameters": {
-						"x": "5",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 560113629103122,
-					"parameters": {
-						"x": "6",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 818663818960701,
-					"parameters": {
-						"x": "7",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "ArrayBalas",
-					"sid": 441991438310274,
-					"parameters": {
-						"x": "8",
-						"value": "1"
 					}
 				}
 			],
@@ -489,7 +418,35 @@
 					}
 				}
 			],
-			"sid": 488961212335529
+			"sid": 488961212335529,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "bullet_small",
+							"sid": 684627765585514,
+							"parameters": {
+								"instance-variable": "numeroBalas",
+								"comparison": 0,
+								"value": "balas +1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "bullet_small",
+							"sid": 596410368761917,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 184616855702421
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -594,7 +551,35 @@
 					}
 				}
 			],
-			"sid": 561793473056817
+			"sid": 561793473056817,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DiseñoSinTítulo",
+							"sid": 994462999643366,
+							"parameters": {
+								"instance-variable": "numeroPlato",
+								"comparison": 0,
+								"value": "marcasPlatos +1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DiseñoSinTítulo",
+							"sid": 166697381228919,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 953038829426933
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -988,816 +973,6 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 437861446824173,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "9"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 657558747332276,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 452276806471686,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 134598108760350,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 883945928484053,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 297725769317193,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 480489761155702,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 840081256779154,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 959641789689414,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 631302459337880,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 913801148486409
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 936624947705555,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "8"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 580315184267713,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 316415005790568,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 974393420893141,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 520087755811104,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 282626136719815,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 484247853377089,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 260020075907500,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 763137923886742,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 794620750503897,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 703868860566453
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 585124931724481,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "7"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 260018102017182,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 846895378982807,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 652646984261512,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 268349985911552,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 328073388638699,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 118852766299684,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 579433236646863,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 500486471011698,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 878659719079079,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 216403842635237
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 118690367625402,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "6"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 274460493881642,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 492180363988926,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 647468076337632,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 559737472645841,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 901339788139479,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 692434923121254,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 489281499664801,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 756649900657939,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 992617670970820,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 514669915231522
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 204744451782718,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 175001709460858,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 938736960848765,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 609436249018432,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 553232414395701,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 515280007501601,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 788843563932160,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 111828419946363,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 848015122892956,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 217994133684919,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 591711947419748
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 827080305647046,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 220255699174177,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 293845034781828,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 827543436325895,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 759111030035622,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 550970934423731,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 966668320816342,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 398035275717168,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 806302689758440,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 526806200198380,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 898087957907207
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 333504829885826,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 704943212660973,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 366702524982446,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 350789926599673,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 934166294653712,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 110296480150176,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 783216210186856,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 162671433237191,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 630587971314678,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 196759570254591,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 127647402896483
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 796317788503223,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 806833364428965,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 883668004627183,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 893844902454151,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 607361150410815,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 457605884284112,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 830952313131580,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 881375140865607,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 654311269940110,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 219492112752220,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 486945115019601
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 776705829028650,
-					"parameters": {
-						"variable": "balas",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 120937458156245,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 683853917404541,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 401457960537601,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 539594524339004,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 933900233704612,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 361647899997693,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 681549493269476,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 972904001010019,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 230423221780694,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 231368419908000
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
 					"sid": 238370902475900,
 					"parameters": {
 						"variable": "balas",
@@ -1807,78 +982,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small",
-					"sid": 837273760515440,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small2",
-					"sid": 717674688432612,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small3",
-					"sid": 372077693633649,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small4",
-					"sid": 769183900055876,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small5",
-					"sid": 330316312883135,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small6",
-					"sid": 879733666810624,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small7",
-					"sid": 594835581945938,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small8",
-					"sid": 977912571580457,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "bullet_small9",
-					"sid": 196808061564676,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
 				{
 					"id": "wait",
 					"objectClass": "System",
@@ -1915,8 +1018,8 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "DiseñoSinTítulo",
-					"sid": 230601570793570,
+					"objectClass": "cruzCiervo",
+					"sid": 599081364738984,
 					"parameters": {
 						"visibility": "visible"
 					}

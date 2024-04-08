@@ -114,21 +114,14 @@
 			"Sprite4",
 			"HitboxCIervo",
 			"bullet_small",
-			"bullet_small2",
-			"bullet_small3",
-			"bullet_small4",
-			"bullet_small5",
-			"bullet_small6",
-			"bullet_small7",
-			"bullet_small8",
-			"bullet_small9",
 			"ArrayBalas",
 			"balas",
 			"DiseñoSinTítulo",
 			"Fecha",
 			"countdown",
 			"PlatoVisual",
-			"Partículas"
+			"Partículas",
+			"cruzCiervo"
 		],
 		"subfolders": []
 	},

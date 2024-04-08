@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 950937864907702,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "numeroPlato",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 149785744317292
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
