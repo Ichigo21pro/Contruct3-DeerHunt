@@ -13,7 +13,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Platos",
+			"name": "ObjetivoCantidad",
 			"type": "number",
 			"initialValue": "5",
 			"comment": "",
@@ -30,6 +30,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 624133868997508
+		},
+		{
+			"eventType": "variable",
+			"name": "ObjetivoInfo",
+			"type": "string",
+			"initialValue": "Platos a destruir= ",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 472207405537838
 		},
 		{
 			"eventType": "block",
@@ -53,9 +63,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Objetivo",
-					"sid": 513702767499414,
+					"sid": 592855267013921,
 					"parameters": {
-						"text": "\"Platos a destruir: \"& Platos"
+						"text": "ObjetivoInfo & ObjetivoCantidad"
 					}
 				}
 			],
@@ -89,11 +99,11 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 294105126864983,
+							"sid": 688447334399936,
 							"parameters": {
 								"object-to-create": "Plato",
 								"layer": "0",
-								"x": "random(-350,80)",
+								"x": "random(-950,80)",
 								"y": "764",
 								"create-hierarchy": false,
 								"template-name": "\"\""
@@ -271,7 +281,7 @@
 					"objectClass": "System",
 					"sid": 196723167994136,
 					"parameters": {
-						"variable": "Platos",
+						"variable": "ObjetivoCantidad",
 						"value": "1"
 					}
 				},
@@ -318,10 +328,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Plato",
-					"sid": 906578827036314,
+					"sid": 301462881893418,
 					"behaviorType": "Bala",
 					"parameters": {
-						"speed": "random(400,900)"
+						"speed": "random(400,1500)"
 					}
 				}
 			],
@@ -356,6 +366,51 @@
 				}
 			],
 			"sid": 586882107959999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 291943864720012,
+					"parameters": {
+						"variable": "ObjetivoCantidad",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 591324109321715,
+					"parameters": {
+						"variable": "PlatoCreado",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 675977563445026,
+					"parameters": {
+						"variable": "ObjetivoInfo",
+						"value": "\"Mata al Ciervo= \""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 770289625467024,
+					"parameters": {
+						"variable": "ObjetivoCantidad",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 915142083602955
 		}
 	],
 	"sid": 247786262815208

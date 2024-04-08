@@ -558,75 +558,11 @@
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
-					},
-					{
-						"width": 750,
-						"height": 750,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 898962,
-						"collisionPoly": {
-							"points": [
-								0.5253333333333333,
-								0.16666666666666666,
-								0.648,
-								0.20933333333333334,
-								0.8813333333333333,
-								0.5053333333333333,
-								0.968,
-								0.7773333333333333,
-								0.9346666666666666,
-								0.8386666666666667,
-								0.8093333333333333,
-								0.8093333333333333,
-								0.3333333333333333,
-								0.612,
-								0.4666666666666667,
-								0.212
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					},
-					{
-						"width": 750,
-						"height": 750,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 4918475,
-						"collisionPoly": {
-							"points": [
-								0.45866666666666667,
-								0.14,
-								0.58,
-								0.164,
-								0.852,
-								0.436,
-								0.9506666666666667,
-								0.756,
-								0.8226666666666667,
-								0.7413333333333333,
-								0.31466666666666665,
-								0.5906666666666667,
-								0.4053333333333333,
-								0.19066666666666668
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
 					}
 				],
 				"sid": 897332725545860,
 				"name": "hop",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

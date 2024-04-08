@@ -103,8 +103,8 @@
 						"y": 771,
 						"width": 56,
 						"height": 43,
-						"originX": 0.86,
-						"originY": 0.32,
+						"originX": 0.48,
+						"originY": 0.48,
 						"color": [
 							1,
 							1,
@@ -128,8 +128,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 731,
-						"y": -34,
+						"x": 1041,
+						"y": -40,
 						"width": 50,
 						"height": 50,
 						"originX": 0.5,
@@ -178,35 +178,6 @@
 						"height": 307.90909090909093,
 						"originX": 0.1839258114374034,
 						"originY": 0.4275956284153005,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ciervo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "hop",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -173,
-						"y": 343,
-						"width": 133,
-						"height": 144,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -305,68 +276,12 @@
 						}
 					},
 					"world": {
-						"x": 517,
-						"y": 352,
+						"x": 516,
+						"y": 354,
 						"width": 694,
 						"height": 343,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Texto",
-					"properties": {
-						"text": "Practica esos tiros!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 53,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {
-						"Desvanecer": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 3,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 194,
-						"y": 302,
-						"width": 651,
-						"height": 102,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -439,6 +354,91 @@
 						"y": 17,
 						"width": 320,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ciervo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "hop",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 769,
+						"y": 573,
+						"width": 133,
+						"height": 144,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "Practica esos tiros!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 53,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 18,
+					"instanceVariables": {},
+					"behaviors": {
+						"Desvanecer": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 3,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 194,
+						"y": 302,
+						"width": 651,
+						"height": 102,
 						"originX": 0,
 						"originY": 0,
 						"color": [
