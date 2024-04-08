@@ -71,9 +71,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-touching-object",
+					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 949798873405880,
+					"sid": 741076550115905,
 					"parameters": {
 						"object": "BotonApuntar"
 					}
@@ -137,6 +137,12 @@
 				}
 			],
 			"sid": 790975269227979
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 488961212335529
 		}
 	],
 	"sid": 247786262815208

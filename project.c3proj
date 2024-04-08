@@ -40,6 +40,20 @@
 			"name": "Control táctil",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bala",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Desvanecer",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "g4z4352s1x4",
@@ -56,7 +70,11 @@
 			"dog",
 			"loadingSplashPage_med",
 			"ui_button_Reload",
-			"BotonApuntar"
+			"BotonApuntar",
+			"CajaTexto",
+			"Texto",
+			"Plato",
+			"PuntoReferencia"
 		],
 		"subfolders": []
 	},

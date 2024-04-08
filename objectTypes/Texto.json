@@ -1,0 +1,15 @@
+{
+	"name": "Texto",
+	"plugin-id": "Text",
+	"sid": 414675782735648,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Desvanecer",
+			"sid": 867044947454252
+		}
+	],
+	"effectTypes": []
+}
