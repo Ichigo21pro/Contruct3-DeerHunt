@@ -180,7 +180,18 @@
 		}
 	],
 	"sid": 994826609472422,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Matriz",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 38,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1000,
 	"height": 720,
