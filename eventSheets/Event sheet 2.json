@@ -1786,6 +1786,22 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327152391295490,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 467032680036828,
+					"parameters": {
+						"layout": "Layout 3"
+					}
 				}
 			],
 			"sid": 285627224423874
