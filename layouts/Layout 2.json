@@ -667,11 +667,11 @@
 							"properties": {
 								"movement": "horizontal",
 								"wave": "sine",
-								"period": 4,
+								"period": 0,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 50,
+								"magnitude": 0,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
