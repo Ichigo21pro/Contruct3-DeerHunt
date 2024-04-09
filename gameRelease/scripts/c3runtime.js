@@ -4435,7 +4435,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Particles,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Browser.Acts.GoToURL,
-		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetVar,
@@ -4453,7 +4452,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Acts.SetBoolVar,
-		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
@@ -4467,10 +4465,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetTowardPosition,
 		C3.Behaviors.Bullet.Acts.SetAcceleration,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
+		C3.Behaviors.Fade.Acts.RestartFade,
+		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.SetFlipped,
 		C3.Plugins.Sprite.Acts.SetMirrored,
-		C3.Behaviors.Fade.Acts.RestartFade,
 		C3.Plugins.System.Acts.Wait
 	];
 };
@@ -4517,6 +4516,9 @@ self.C3_JsPropNameTable = [
 	{Partículas: 0},
 	{cruzCiervo: 0},
 	{Partículas2: 0},
+	{JuegaBoton2: 0},
+	{Fade: 0},
+	{DiseñoSinTítulo2: 0},
 	{Apuntando: 0},
 	{ObjetivoPlato: 0},
 	{PlatoCreado: 0},
@@ -4567,7 +4569,9 @@ self.InstanceType = {
 	PlatoVisual: class extends self.ISpriteInstance {},
 	Partículas: class extends self.IParticlesInstance {},
 	cruzCiervo: class extends self.ISpriteInstance {},
-	Partículas2: class extends self.IParticlesInstance {}
+	Partículas2: class extends self.IParticlesInstance {},
+	JuegaBoton2: class extends self.ISpriteInstance {},
+	DiseñoSinTítulo2: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4669,7 +4673,6 @@ function or(l, r)
 
 self.C3_ExpressionFuncs = [
 		() => "https://play.google.com/store/apps/details?id=com.fullfat.deerhunter&hl=es_MX",
-		() => 5,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -4710,10 +4713,6 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 764,
 		() => "",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => and("Se HitboxCIervo cruzCiervo Plato, platos =", v0.GetValue());
-		},
 		() => 509,
 		() => 353,
 		() => 1,
@@ -4730,11 +4729,14 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(300, 1000);
 		},
+		() => 48,
+		() => 258,
 		() => "Mata al Ciervo= ",
 		() => 600,
 		() => "eres un cazador",
 		() => 4,
-		() => "sin balas"
+		() => "sin balas",
+		() => 5
 ];
 
 
