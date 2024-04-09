@@ -4514,9 +4514,9 @@ const C3 = self.C3;
 self.C3_GetObjectRefTable = function () {
 	return [
 		C3.Plugins.TiledBg,
+		C3.Behaviors.Tween,
 		C3.Plugins.Touch,
 		C3.Plugins.Sprite,
-		C3.Behaviors.Tween,
 		C3.Plugins.Text,
 		C3.Plugins.Browser,
 		C3.Behaviors.Sin,
@@ -4572,9 +4572,9 @@ self.C3_GetObjectRefTable = function () {
 	];
 };
 self.C3_JsPropNameTable = [
+	{Tween: 0},
 	{TiledBackground: 0},
 	{Touch: 0},
-	{Tween: 0},
 	{Sprite: 0},
 	{JuegaBoton: 0},
 	{TextJuega: 0},
