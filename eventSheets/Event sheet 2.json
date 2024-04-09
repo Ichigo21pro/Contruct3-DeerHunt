@@ -662,6 +662,18 @@
 					"parameters": {
 						"speed": "random(300,1000)"
 					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "DiseñoSinTítulo2",
+					"sid": 578295819263248,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "DiseñoSinTítulo2",
+					"sid": 677795127352156,
+					"behaviorType": "Fade"
 				}
 			],
 			"sid": 643826029779577
@@ -715,6 +727,15 @@
 					"id": "destroy",
 					"objectClass": "Plato",
 					"sid": 687482696587590
+				},
+				{
+					"id": "set-position",
+					"objectClass": "DiseñoSinTítulo2",
+					"sid": 159535454089631,
+					"parameters": {
+						"x": "48",
+						"y": " 258"
+					}
 				},
 				{
 					"id": "set-boolean-eventvar",
