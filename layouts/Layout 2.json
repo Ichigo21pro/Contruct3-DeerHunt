@@ -428,7 +428,7 @@
 				{
 					"type": "HitboxCIervo",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -450,10 +450,10 @@
 						}
 					},
 					"world": {
-						"x": -167,
-						"y": 258,
-						"width": 87,
-						"height": 47,
+						"x": -139.5,
+						"y": 254.396,
+						"width": 86,
+						"height": 60,
 						"originX": 0.5,
 						"originY": 0.492,
 						"color": [
@@ -631,7 +631,7 @@
 					},
 					"uid": 30,
 					"instanceVariables": {
-						"numeroBalas": 1
+						"numeroBalas": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -1111,7 +1111,7 @@
 					},
 					"uid": 31,
 					"instanceVariables": {
-						"numeroBalas": 4
+						"numeroBalas": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -1142,7 +1142,7 @@
 					},
 					"uid": 32,
 					"instanceVariables": {
-						"numeroBalas": 7
+						"numeroBalas": 8
 					},
 					"behaviors": {},
 					"world": {
@@ -1173,7 +1173,7 @@
 					},
 					"uid": 33,
 					"instanceVariables": {
-						"numeroBalas": 2
+						"numeroBalas": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1204,7 +1204,7 @@
 					},
 					"uid": 34,
 					"instanceVariables": {
-						"numeroBalas": 6
+						"numeroBalas": 7
 					},
 					"behaviors": {},
 					"world": {
@@ -1235,7 +1235,7 @@
 					},
 					"uid": 35,
 					"instanceVariables": {
-						"numeroBalas": 0
+						"numeroBalas": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1266,7 +1266,7 @@
 					},
 					"uid": 36,
 					"instanceVariables": {
-						"numeroBalas": 8
+						"numeroBalas": 9
 					},
 					"behaviors": {},
 					"world": {
@@ -1297,7 +1297,7 @@
 					},
 					"uid": 37,
 					"instanceVariables": {
-						"numeroBalas": 3
+						"numeroBalas": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -1328,7 +1328,7 @@
 					},
 					"uid": 39,
 					"instanceVariables": {
-						"numeroBalas": 5
+						"numeroBalas": 6
 					},
 					"behaviors": {},
 					"world": {

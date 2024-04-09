@@ -218,7 +218,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "countdown",
-					"sid": 617842865973810,
+					"sid": 143286962707432,
 					"parameters": {
 						"text": "diferenciaTiempo"
 					}
@@ -691,6 +691,11 @@
 			],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "Plato",
+					"sid": 687482696587590
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 137891565805790,
@@ -719,10 +724,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "HitboxCIervo",
-					"sid": 675922767435405,
+					"sid": 402480542058761,
 					"behaviorType": "Bala",
 					"parameters": {
-						"speed": "700"
+						"speed": "600"
 					}
 				}
 			],
