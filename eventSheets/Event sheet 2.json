@@ -562,6 +562,17 @@
 			],
 			"actions": [
 				{
+					"id": "spawn-another-object",
+					"objectClass": "Plato",
+					"sid": 257333811388277,
+					"parameters": {
+						"object": "Partículas2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Plato",
 					"sid": 564524609708476
