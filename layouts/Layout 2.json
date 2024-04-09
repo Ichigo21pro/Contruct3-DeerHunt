@@ -910,7 +910,7 @@
 					},
 					"uid": 50,
 					"instanceVariables": {
-						"numeroPlato": 0
+						"numeroPlato": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -941,7 +941,7 @@
 					},
 					"uid": 51,
 					"instanceVariables": {
-						"numeroPlato": 1
+						"numeroPlato": 2
 					},
 					"behaviors": {},
 					"world": {
@@ -972,7 +972,7 @@
 					},
 					"uid": 52,
 					"instanceVariables": {
-						"numeroPlato": 2
+						"numeroPlato": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -1003,7 +1003,7 @@
 					},
 					"uid": 53,
 					"instanceVariables": {
-						"numeroPlato": 3
+						"numeroPlato": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -1034,7 +1034,7 @@
 					},
 					"uid": 54,
 					"instanceVariables": {
-						"numeroPlato": 4
+						"numeroPlato": 5
 					},
 					"behaviors": {},
 					"world": {

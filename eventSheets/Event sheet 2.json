@@ -248,6 +248,15 @@
 							"id": "else",
 							"objectClass": "System",
 							"sid": 470737866171135
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 700219410839697,
+							"parameters": {
+								"variable": "PlatoCreado"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -542,6 +551,15 @@
 					}
 				},
 				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 717010937755213,
+					"parameters": {
+						"variable": "marcasPlatos",
+						"value": "1"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 774124404369662,
@@ -695,10 +713,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "HitboxCIervo",
-					"sid": 599102752344105,
+					"sid": 675922767435405,
 					"behaviorType": "Bala",
 					"parameters": {
-						"speed": "900"
+						"speed": "700"
 					}
 				}
 			],
