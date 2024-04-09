@@ -143,12 +143,12 @@
 						}
 					},
 					"world": {
-						"x": 434.0064633974989,
-						"y": 611.7555886736214,
+						"x": 554,
+						"y": 635,
 						"width": 264.9090909090909,
 						"height": 307.90909090909093,
-						"originX": 0.1839258114374034,
-						"originY": 0.4275956284153005,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -428,7 +428,7 @@
 				{
 					"type": "HitboxCIervo",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -580,7 +580,7 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"text-direction": "ltr",

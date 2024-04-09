@@ -414,6 +414,16 @@
 					"sid": 249184110788712
 				},
 				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 806431358482608,
+					"parameters": {
+						"variable": "balas",
+						"comparison": 5,
+						"value": "1"
+					}
+				},
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 652700903706661,
@@ -423,6 +433,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite2",
+					"sid": 742937558968182,
+					"parameters": {
+						"animation": "\"shoot\"",
+						"from": "beginning"
+					}
+				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
@@ -977,6 +996,26 @@
 			],
 			"actions": [
 				{
+					"id": "set-text",
+					"objectClass": "TextoMensaje",
+					"sid": 938083856253752,
+					"parameters": {
+						"text": "\"eres un cazador\""
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "CajaTexto",
+					"sid": 372202380420120,
+					"behaviorType": "Desvanecer"
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "TextoMensaje",
+					"sid": 567427867696806,
+					"behaviorType": "Desvanecer"
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 551496901784530,
@@ -1011,6 +1050,26 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TextoMensaje",
+					"sid": 797420461049949,
+					"parameters": {
+						"text": "\"sin balas\""
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "CajaTexto",
+					"sid": 881293835330654,
+					"behaviorType": "Desvanecer"
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "TextoMensaje",
+					"sid": 489903660102954,
+					"behaviorType": "Desvanecer"
+				},
 				{
 					"id": "wait",
 					"objectClass": "System",
