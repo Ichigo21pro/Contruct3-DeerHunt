@@ -4725,7 +4725,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0(300, 1000);
 		},
 		() => "Mata al Ciervo= ",
-		() => 700,
+		() => 600,
 		() => 4
 ];
 
