@@ -4516,7 +4516,7 @@ self.C3_JsPropNameTable = [
 	{Partículas: 0},
 	{cruzCiervo: 0},
 	{Partículas2: 0},
-	{JuegaBoton2: 0},
+	{PruebaBoton: 0},
 	{Fade: 0},
 	{DiseñoSinTítulo2: 0},
 	{Apuntando: 0},
@@ -4570,7 +4570,7 @@ self.InstanceType = {
 	Partículas: class extends self.IParticlesInstance {},
 	cruzCiervo: class extends self.ISpriteInstance {},
 	Partículas2: class extends self.IParticlesInstance {},
-	JuegaBoton2: class extends self.ISpriteInstance {},
+	PruebaBoton: class extends self.ISpriteInstance {},
 	DiseñoSinTítulo2: class extends self.ISpriteInstance {}
 }
 }

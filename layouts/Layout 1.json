@@ -104,7 +104,7 @@
 					}
 				},
 				{
-					"type": "JuegaBoton2",
+					"type": "PruebaBoton",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

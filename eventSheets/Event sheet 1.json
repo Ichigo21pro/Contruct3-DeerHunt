@@ -32,9 +32,9 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 736052956249602,
+					"sid": 982334223074680,
 					"parameters": {
-						"object": "JuegaBoton"
+						"object": "PruebaBoton"
 					}
 				}
 			],
