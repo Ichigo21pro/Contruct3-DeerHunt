@@ -83,33 +83,33 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "JuegaBoton",
-					"sid": 427449011953807,
+					"sid": 104715789419854,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "size",
 						"end-x": "Self.Width *1.05",
 						"end-y": "Self.Height*1.05",
-						"time": "0.3",
+						"time": "0.5",
 						"ease": "easeinoutsine",
 						"destroy-on-complete": "no",
 						"loop": "no",
-						"ping-pong": "no",
+						"ping-pong": "yes",
 						"repeat-count": "1"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 683924634107094,
+					"sid": 499519077076165,
 					"parameters": {
-						"seconds": "0.5"
+						"seconds": "1"
 					}
 				},
 				{
 					"id": "go-to-url",
 					"objectClass": "Browser",
-					"sid": 251930071341086,
+					"sid": 758550122337738,
 					"parameters": {
 						"url": "\"https://play.google.com/store/apps/details?id=com.fullfat.deerhunter&hl=es_MX\"",
 						"target": "self"
@@ -134,27 +134,27 @@
 				{
 					"id": "tween-two-properties",
 					"objectClass": "PruebaBoton",
-					"sid": 492441735239734,
+					"sid": 207073511768763,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
 						"property": "size",
 						"end-x": "Self.Width *1.05",
 						"end-y": "Self.Height*1.05",
-						"time": "0.3",
+						"time": "0.5",
 						"ease": "easeinoutsine",
 						"destroy-on-complete": "no",
 						"loop": "no",
-						"ping-pong": "no",
+						"ping-pong": "yes",
 						"repeat-count": "1"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 713146740709366,
+					"sid": 434003793107030,
 					"parameters": {
-						"seconds": "0.5"
+						"seconds": "1"
 					}
 				},
 				{
