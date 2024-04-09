@@ -4457,6 +4457,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
+		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetVisible,
@@ -4469,6 +4470,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.SetFlipped,
 		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Behaviors.Fade.Acts.RestartFade,
 		C3.Plugins.System.Acts.Wait
 	];
 };
@@ -4712,6 +4714,7 @@ self.C3_ExpressionFuncs = [
 		() => 509,
 		() => 353,
 		() => 1,
+		() => "shoot",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + 1);
@@ -4726,7 +4729,9 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "Mata al Ciervo= ",
 		() => 600,
-		() => 4
+		() => "eres un cazador",
+		() => 4,
+		() => "sin balas"
 ];
 
 
