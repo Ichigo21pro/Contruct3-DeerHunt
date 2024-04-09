@@ -657,10 +657,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Plato",
-					"sid": 801662841302249,
+					"sid": 608911387111601,
 					"behaviorType": "Bala",
 					"parameters": {
-						"speed": "random(300,1000)"
+						"speed": "random(300,800)"
 					}
 				},
 				{

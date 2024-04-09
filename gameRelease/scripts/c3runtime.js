@@ -4519,6 +4519,7 @@ self.C3_JsPropNameTable = [
 	{PruebaBoton: 0},
 	{Fade: 0},
 	{DiseñoSinTítulo2: 0},
+	{Sprite5: 0},
 	{Apuntando: 0},
 	{ObjetivoPlato: 0},
 	{PlatoCreado: 0},
@@ -4571,7 +4572,8 @@ self.InstanceType = {
 	cruzCiervo: class extends self.ISpriteInstance {},
 	Partículas2: class extends self.IParticlesInstance {},
 	PruebaBoton: class extends self.ISpriteInstance {},
-	DiseñoSinTítulo2: class extends self.ISpriteInstance {}
+	DiseñoSinTítulo2: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4727,7 +4729,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(300, 1000);
+			return () => f0(300, 800);
 		},
 		() => 48,
 		() => 258,
