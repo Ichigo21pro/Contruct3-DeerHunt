@@ -662,7 +662,22 @@
 					},
 					"uid": 41,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 273,
 						"y": 28,

@@ -56,7 +56,22 @@
 					},
 					"uid": 11,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 4,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 804,
 						"y": 345,
@@ -85,7 +100,22 @@
 					},
 					"uid": 12,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 4,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 145,
 						"y": 424,
@@ -190,8 +220,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 327,
+						"x": 524,
+						"y": 276,
 						"width": 536,
 						"height": 250.99999999999997,
 						"originX": 0.5,
