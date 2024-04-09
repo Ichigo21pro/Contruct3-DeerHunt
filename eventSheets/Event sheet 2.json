@@ -281,15 +281,6 @@
 								"variable": "PlatoCreado",
 								"value": "true"
 							}
-						},
-						{
-							"id": "log",
-							"objectClass": "Browser",
-							"sid": 159099197120201,
-							"parameters": {
-								"type": "log",
-								"message": "\"Se HitboxCIervo cruzCiervo Plato, platos =\" & ObjetivoPlato"
-							}
 						}
 					],
 					"sid": 526682551904861

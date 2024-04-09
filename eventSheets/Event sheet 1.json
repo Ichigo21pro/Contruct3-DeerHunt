@@ -30,11 +30,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 611483326502262,
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 736052956249602,
 					"parameters": {
-						"interval-seconds": "5"
+						"object": "JuegaBoton"
 					}
 				}
 			],
@@ -42,13 +42,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 634931978373292,
+					"sid": 384516223933406,
 					"parameters": {
 						"layout": "Layout 2"
 					}
 				}
 			],
-			"sid": 533830589692731
+			"sid": 736770115965959
 		}
 	],
 	"sid": 812400956905769
