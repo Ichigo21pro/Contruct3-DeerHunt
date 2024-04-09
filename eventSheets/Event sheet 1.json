@@ -5,6 +5,72 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 817300537834290
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "PruebaBoton",
+					"sid": 358819928662486,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width *1.03",
+						"end-y": "Self.Height*1.03",
+						"time": "0.3",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "TextPruebalo",
+					"sid": 765391239226158,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width *1.03",
+						"end-y": "Self.Height*1.03",
+						"time": "0.3",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite",
+					"sid": 360622078491145,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.y +450",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 234525896770252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 160456646325998,
@@ -14,6 +80,32 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "JuegaBoton",
+					"sid": 427449011953807,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width *1.05",
+						"end-y": "Self.Height*1.05",
+						"time": "0.3",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 683924634107094,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
 				{
 					"id": "go-to-url",
 					"objectClass": "Browser",
@@ -39,6 +131,32 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "PruebaBoton",
+					"sid": 492441735239734,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width *1.05",
+						"end-y": "Self.Height*1.05",
+						"time": "0.3",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 713146740709366,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

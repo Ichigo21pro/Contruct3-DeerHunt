@@ -82,6 +82,13 @@
 			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "g4z4352s1x4",
@@ -91,7 +98,7 @@
 			"Touch",
 			"Sprite",
 			"JuegaBoton",
-			"Text",
+			"TextJuega",
 			"Browser",
 			"scope",
 			"deer",
@@ -125,7 +132,9 @@
 			"Partículas2",
 			"PruebaBoton",
 			"DiseñoSinTítulo2",
-			"Sprite5"
+			"Sprite5",
+			"deerVisual",
+			"TextPruebalo"
 		],
 		"subfolders": []
 	},

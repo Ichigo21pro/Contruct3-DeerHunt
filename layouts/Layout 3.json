@@ -70,10 +70,15 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 804,
+						"x": 1208,
 						"y": 345,
 						"width": 386,
 						"height": 454,
@@ -114,10 +119,15 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 145,
+						"x": -255,
 						"y": 424,
 						"width": 295,
 						"height": 292,
@@ -144,7 +154,13 @@
 					},
 					"uid": 13,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 518,
 						"y": 534,
@@ -163,7 +179,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "TextJuega",
 					"properties": {
 						"text": "JUEGA YA",
 						"enable-bbcode": true,
@@ -218,10 +234,16 @@
 					},
 					"uid": 15,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 524,
-						"y": 276,
+						"y": -174,
 						"width": 536,
 						"height": 250.99999999999997,
 						"originX": 0.5,

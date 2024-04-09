@@ -56,10 +56,16 @@
 					},
 					"uid": 6,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 504,
-						"y": 316,
+						"y": -166,
 						"width": 536,
 						"height": 250.99999999999997,
 						"originX": 0.5,
@@ -85,7 +91,13 @@
 					},
 					"uid": 7,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 761,
 						"y": 539,
@@ -114,7 +126,13 @@
 					},
 					"uid": 57,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 300,
 						"y": 541,
@@ -133,7 +151,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "TextJuega",
 					"properties": {
 						"text": "JUEGA YA",
 						"enable-bbcode": true,
@@ -178,7 +196,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "TextPruebalo",
 					"properties": {
 						"text": "PRUÉBALO",
 						"enable-bbcode": true,
@@ -202,12 +220,18 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 58,
+					"uid": 41,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 181,
-						"y": 516,
+						"x": 183,
+						"y": 515,
 						"width": 254,
 						"height": 57,
 						"originX": 0,

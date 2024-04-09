@@ -195,6 +195,50 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "deerVisual",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 61,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 269,
+						"y": 32,
+						"width": 88,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Sprite3",
 					"properties": {
 						"initially-visible": true,
@@ -253,7 +297,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 8,
-						"y": 17,
+						"y": 13,
 						"width": 320,
 						"height": 30,
 						"originX": 0,
@@ -477,7 +521,13 @@
 					},
 					"uid": 29,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 849,
 						"y": 688,
@@ -570,7 +620,7 @@
 						"text": "Mensaje",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 53,
+						"size": 37.29999999999997,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -604,8 +654,8 @@
 						}
 					},
 					"world": {
-						"x": 189,
-						"y": 300,
+						"x": 195,
+						"y": 320,
 						"width": 651,
 						"height": 102,
 						"originX": 0,
@@ -648,50 +698,6 @@
 							1
 						],
 						"angle": 0.011235482257962726,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "deer",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 0,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 0,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 273,
-						"y": 28,
-						"width": 88,
-						"height": 51,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},

@@ -183,9 +183,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "TextoMensaje",
-					"sid": 182234530034177,
+					"sid": 353736035949192,
 					"parameters": {
-						"text": "\"Practica esos tiros!\""
+						"text": "\"¡Toca para disparar!\""
 					}
 				},
 				{

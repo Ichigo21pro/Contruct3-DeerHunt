@@ -5,6 +5,88 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 793020970871321
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "dog",
+					"sid": 601132758447743,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "Self.X +400",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "deer",
+					"sid": 945886562026344,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "Self.X -400",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "JuegaBoton",
+					"sid": 906727871563667,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width *1.05",
+						"end-y": "Self.Height*1.05",
+						"time": "0.3",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Sprite",
+					"sid": 428227286119024,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.y +450",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 801098100389128
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 275768926092796,
